@@ -67,6 +67,7 @@ Several sites provide guidance on installing pelican and setting up your ssytem.
 
 [Pandoc Reader](https://github.com/liob/pandoc_reader/tree/9ef0197eed5d141bf0f3b9a8468cd37ad3e5fbd7) I'm using a branch with a pull request that also parses Yaml metadata
 
+[category_meta](https://github.com/getpelican/pelican-plugins/tree/master/category_meta) allows category information to be provided in index files and posts kept in subdirectories by category.
 
 ## Python libraries needed by these plugins
 
@@ -80,7 +81,15 @@ Several sites provide guidance on installing pelican and setting up your ssytem.
 [Figure-ref](https://github.com/cmacmackin/figure-ref/tree/40e04d32bff468a6b3e63c373c5d95fca39783fe) provides figure references. I think the pandoc filters might be better but we shouod check.
 
 [filetime_from_git](https://github.com/getpelican/pelican-plugins/tree/master/filetime_from_git)
- provides dates for file based on git
+ provides dates for file based on git but it didn't work when I tried it.
+
+[glossary](https://github.com/getpelican/pelican-plugins/tree/master/glossary) creates a glossary page of definiton lists from individual pages.
+
+[more categories](https://github.com/getpelican/pelican-plugins/tree/master/more_categories) adds nested categories, multiple categories per areticle
+
+[neighbors](https://github.com/getpelican/pelican-plugins/tree/master/neighbors) provides next and previous metadata
+
+
 # Pandoc settings and filters
 
 The pandoc reader must be added as a plugin for pelican. Currently, the main branch is missing a few features (including reading YAML metadata for Pelican) so I'm using a branch on pull request #13.
